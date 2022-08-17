@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+.Conteine{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(240, 237, 233);
+    color:crimson
+}
+
+.Conteine ul{
+    display: flex;
+    margin: 15px;
+    gap: 25px; 
+}
+
+.Entrar{
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+}
+
