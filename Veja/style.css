@@ -1,0 +1,8 @@
+.img{
+    width: 100%;
+    height: auto;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 70px; 
+}
