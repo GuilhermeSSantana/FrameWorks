@@ -1,412 +1,405 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="https://logodownload.org/wp-content/uploads/2017/04/veja-logo-0-2048x2048.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
-    <title>Veja</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example">
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <form class="d-flex" role="Buscar">
-          <input
-            class="form-control me-2"
-            type="Buscar"
-            placeholder="Buscar"
-            aria-label="Buscar"
-          />
-          <button class="btn btn-success" type="submit">Buscar</button>
-        </form>
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://logodownload.org/wp-content/uploads/2017/04/veja-logo-0-2048x2048.png"
-            width="50"
-            height="50"
-            class="d-inline-block align-top"
-            alt=""
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-          Menu
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Dark offcanvas
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Últimas Noticias</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Radar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Radar econômico</a
-                >
-              </li>
-             
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Colunas
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Todas as colunas</a></li>
-                  <li><a class="dropdown-item" href="#">Matheus Leitão</a></li>
-                  <li><a class="dropdown-item" href="#">Jose Casada</a></li>
-                  <li><a class="dropdown-item" href="#">Fernando Schuler</a></li>
-                  <li><a class="dropdown-item" href="#">Clarisse Oliveira</a></li>
-                  <li><a class="dropdown-item" href="#">Veja Gente</a></li>
-                  <li><a class="dropdown-item" href="#">Maquiavel</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                 
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Assuntos
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Politica</a></li>
-                  <li><a class="dropdown-item" href="#">Economia</a></li>
-                  <li><a class="dropdown-item" href="#">Brasil</a></li>
-                  <li><a class="dropdown-item" href="#">Tecnologia</a></li>
-                  <li><a class="dropdown-item" href="#">Mundo</a></li>
-                  <li><a class="dropdown-item" href="#">Saude</a></li>
-                  <li><a class="dropdown-item" href="#">Agenda Verde</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                 
-                </ul>
-              </li>
-            </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://logodownload.org/wp-content/uploads/2017/04/veja-logo-0-2048x2048.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Veja</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Placar</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                >Paginas Amarela</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Minha Abril</a
-                >
-              </li>
+<body class="p-3 m-0 border-0 bd-example">
 
-          </div>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <form class="d-flex" role="Buscar">
+        <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" />
+        <button class="btn btn-success" type="submit">Buscar</button>
+      </form>
+      <a class="navbar-brand" href="#">
+        <img src="https://logodownload.org/wp-content/uploads/2017/04/veja-logo-0-2048x2048.png" width="50" height="50"
+          class="d-inline-block align-top" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+        Menu
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            <a class="navbar-brand" href="#">
+              <img src="https://logodownload.org/wp-content/uploads/2017/04/veja-logo-0-2048x2048.png" width="50" height="50"
+                class="d-inline-block align-top" alt="" />
+            </a>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Últimas Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Radar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Radar econômico</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Colunas
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Todas as colunas</a></li>
+                <li><a class="dropdown-item" href="#">Matheus Leitão</a></li>
+                <li><a class="dropdown-item" href="#">Jose Casada</a></li>
+                <li><a class="dropdown-item" href="#">Fernando Schuler</a></li>
+                <li><a class="dropdown-item" href="#">Clarisse Oliveira</a></li>
+                <li><a class="dropdown-item" href="#">Veja Gente</a></li>
+                <li><a class="dropdown-item" href="#">Maquiavel</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Assuntos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Politica</a></li>
+                <li><a class="dropdown-item" href="#">Economia</a></li>
+                <li><a class="dropdown-item" href="#">Brasil</a></li>
+                <li><a class="dropdown-item" href="#">Tecnologia</a></li>
+                <li><a class="dropdown-item" href="#">Mundo</a></li>
+                <li><a class="dropdown-item" href="#">Saude</a></li>
+                <li><a class="dropdown-item" href="#">Agenda Verde</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Placar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Paginas Amarela</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Minha Abril</a>
+            </li>
+
         </div>
       </div>
-    </nav>
-    
-    <div class="img">
-      <img src="https://tpc.googlesyndication.com/simgad/13547858705668422821" alt="">
     </div>
+  </nav>
 
-    <div class="container">
-      <h1>
-        Operação da PF mira Luciano Hang e outros empresários bolsonaristas
-      </h1>
-      <br />
-      <h3>
-        Grupo que defendeu golpe de Estado em mensagens no WhatsApp é alvo de
-        mandados de busca e apreensão expedidos por Alexandre de Moraes
-      </h3>
-      <br />
-      <p>
-        Nunca falei sobre golpe', diz dono da Havan após ser alvo de operação
-      </p>
-      <p>
-        Flávio Bolsonaro critica ação da PF contra empresários aliados: ‘Insano’
-      </p>
-      <p>
-        Ação ‘foi a favor ou contra a democracia?’, questiona o senador do PL
-      </p>
-      <p>
-        Decisão de Moraes contra empresários bolsonaristas é recado para a
-        eleição
-      </p>
-    </div>
+  <div class="img">
+    <img src="https://tpc.googlesyndication.com/simgad/13547858705668422821" alt="">
+  </div>
+
+  <div class="container">
+    <h1>
+      Operação da PF mira Luciano Hang e outros empresários bolsonaristas
+    </h1>
     <br />
-    <div class="container">
-      <div class="row">
-        <div class="col">
+    <h3>
+      Grupo que defendeu golpe de Estado em mensagens no WhatsApp é alvo de
+      mandados de busca e apreensão expedidos por Alexandre de Moraes
+    </h3>
+    <br />
+    <p>
+      Nunca falei sobre golpe', diz dono da Havan após ser alvo de operação
+    </p>
+    <p>
+      Flávio Bolsonaro critica ação da PF contra empresários aliados: ‘Insano’
+    </p>
+    <p>
+      Ação ‘foi a favor ou contra a democracia?’, questiona o senador do PL
+    </p>
+    <p>
+      Decisão de Moraes contra empresários bolsonaristas é recado para a
+      eleição
+    </p>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2022/07/2115946_fotoarena.jpg.jpg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            Manifestações
+            ENSAIO - A manifestação de 2021 em São Paulo: bolsonaristas querem agora levar 1 milhão de pessoas à Avenida
+            Paulista -
+            O 12 a 1 da direita sobre a esquerda no 7 de Setembro na Av. Paulista
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col order-5">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2022/08/RODRIGO-GARCIA-TARCISIO-HADDAD.jpg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            Manifestações
+            ENSAIO - A manifestação de 2021 em São Paulo: bolsonaristas querem agora levar 1 milhão de pessoas à Avenida
+            Paulista -
+            O 12 a 1 da direita sobre a esquerda no 7 de Setembro na Av. Paulista
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col order-1">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2022/08/000_32GM6DB.jpg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            Paraná Pesquisas
+            (COMBO) This combination of pictures created on August 16, 2022 shows Brazil's President Jair Bolsonaro (L)
+            speaking during the launching of his re-election campaign for the upcoming national elections in October, in
+            Juiz de Fora, Minas Gerais state, Brazil, on August 16, 2022; and Brazilian presidential candidate for the
+            leftist Workers Party (PT) and former President (2003-2010), Luiz Inacio Lula da Silva, delivering a speech
+            during the launching of his campaign for the upcoming national elections in October on a rally at a
+            Volkswagem car factory in Sao Bernardo do Campo, Sao Paulo, Brazil, on August 16, 2022. - The race for
+            Brazil's October elections formally opened Tuesday, with dueling campaign events by far-right incumbent Jair
+            Bolsonaro and leftist ex-president Luiz Inacio Lula da Silva highlighting the South American giant's deep
+            divides. Front-runners Bolsonaro and Lula, who have in reality been on the campaign trail for months, made
+            it official on opening day with rival events showcasing their polar-opposite styles. (Photo by MAURO
+            PIMENTEL and Miguel SCHINCARIOL / AFP)
+            Bolsonaro mantém vantagem sobre Lula em SP, mostra levantamento
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2016/06/dilma-cristina-kirchner-20121207-84-original2.jpeg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            América do Sul
+            Dilma e Cristina Kirchner durante encontro do Mercosul, em Brasília, em 2016
+            Dilma sai em apoio a Cristina Kirchner, acusada de corrupção
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col order-5">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2022/08/GettyImages-1242666903.jpg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            Mundo
+            MOSCOW, RUSSIA - AUGUST 23: Russian sociologist and philosopher Aleksandr Dugin attends a funeral ceremony
+            on August 23, 2022 in Moscow, Russia for his daughter Darya Dugina, who was killed in a car explosion on the
+            outskirts of Moscow late Saturday. Dugina, 29, was the daughter of Russian sociologist and philosopher
+            Aleksandr Dugin, who heads the International Eurasian Movement, a political movement which opposes American
+            values like liberalism and capitalism. (Photo by Evgenii Bugubaev/Anadolu Agency via Getty Images)
+            Dugin, o guru de Putin, acumula seguidores no Brasil e já esteve no país
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col order-1">
+        <figure class="figure">
+          <img
+            src="https://veja.abril.com.br/wp-content/uploads/2022/07/000_8TL2GE.jpg?quality=70&strip=info&resize=850,567"
+            class="figure-img img-fluid rounded" alt="..." />
+          <figcaption class="figure-caption">
+            Estados Unidos
+            US President Donald Trump dances at the end of a Make America Great Again rally as he campaigns in Gastonia,
+            North Carolina, October 21, 2020. (Photo by SAUL LOEB / AFP)
+            A tentativa de Trump de impedir a investigação do FBI contra ele
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="img">
+    <img src="https://tpc.googlesyndication.com/simgad/13547858705668422821" alt="">
+  </div>
+
+
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col">
+        <div class="Box-Caixa">
+          <H1>BRASIL</H1>
           <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2022/07/2115946_fotoarena.jpg.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
+            <img
+              src="https://veja.abril.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-20-at-20.50.30.jpeg?quality=70&strip=info&resize=850,567"
+              class="figure-img img-fluid rounded" alt="..." />
             <figcaption class="figure-caption">
-              Manifestações
-              ENSAIO - A manifestação de 2021 em São Paulo: bolsonaristas querem agora levar 1 milhão de pessoas à Avenida Paulista -
-              O 12 a 1 da direita sobre a esquerda no 7 de Setembro na Av. Paulista
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col order-5">
-          <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2022/08/RODRIGO-GARCIA-TARCISIO-HADDAD.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-            <figcaption class="figure-caption">
-              Manifestações
-              ENSAIO - A manifestação de 2021 em São Paulo: bolsonaristas querem agora levar 1 milhão de pessoas à Avenida Paulista -
-              O 12 a 1 da direita sobre a esquerda no 7 de Setembro na Av. Paulista
-            </figcaption>
-          </figure>
-        </div>
-        <div class="col order-1">
-          <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2022/08/000_32GM6DB.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-            <figcaption class="figure-caption">
-              Paraná Pesquisas
-(COMBO) This combination of pictures created on August 16, 2022 shows Brazil's President Jair Bolsonaro (L) speaking during the launching of his re-election campaign for the upcoming national elections in October, in Juiz de Fora, Minas Gerais state, Brazil, on August 16, 2022; and Brazilian presidential candidate for the leftist Workers Party (PT) and former President (2003-2010), Luiz Inacio Lula da Silva, delivering a speech during the launching of his campaign for the upcoming national elections in October on a rally at a Volkswagem car factory in Sao Bernardo do Campo, Sao Paulo, Brazil, on August 16, 2022. - The race for Brazil's October elections formally opened Tuesday, with dueling campaign events by far-right incumbent Jair Bolsonaro and leftist ex-president Luiz Inacio Lula da Silva highlighting the South American giant's deep divides. Front-runners Bolsonaro and Lula, who have in reality been on the campaign trail for months, made it official on opening day with rival events showcasing their polar-opposite styles. (Photo by MAURO PIMENTEL and Miguel SCHINCARIOL / AFP)
-Bolsonaro mantém vantagem sobre Lula em SP, mostra levantamento
+
+              <h4>
+                Sem Crivella, Romário pula na frente em disputa pelo Senado
+              </h4>
+              <p>
+              Nova pesquisa do Real Time Big Data, a primeira sem o ex-prefeito do Rio, coloca Molon em segundo e
+              Daciolo em terceiro.
+              </p>
+
+              <h5>Pesquisa</h5>
+              <p>
+                O perfil do grupo de indecisos que pode decidir a eleição.
+              </p>
+
+
+              <h5>Real Time Big Data</h5>
+              <p>
+                Cláudia Castro abre dez pontos de vantagem sobre Freixo.
+              </p>
+
+
+              <h5>São Paulo</h5>
+              <p>
+                Garcia encosta em Tarcisio;<br>
+                Haddad lidera corrida
+              </p>
+
             </figcaption>
           </figure>
         </div>
       </div>
-      <br>
-      <br>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="col">
+        <div class="Box-Caixa">
+          <H1>ECONOMIA</H1>
           <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2016/06/dilma-cristina-kirchner-20121207-84-original2.jpeg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
+            <img
+              src="https://veja.abril.com.br/wp-content/uploads/2022/06/BOMBA-DE-GASOLINA-POSTOS-10.jpg?quality=70&strip=info&resize=850,567"
+              class="figure-img img-fluid rounded" alt="..." />
             <figcaption class="figure-caption">
-              América do Sul
-Dilma e Cristina Kirchner durante encontro do Mercosul, em Brasília, em 2016
-Dilma sai em apoio a Cristina Kirchner, acusada de corrupção
+
+              <h4>
+                Petrobras enfrenta nova guerra, agora com o STF
+              </h4>
+              <p>
+              Nova pesquisa do Real Time Big Data, a primeira sem o ex-prefeito do Rio, coloca Molon em segundo e
+              Daciolo em terceiro.
+              </p>
+
+              <h5>Pesquisa</h5>
+              <p>
+                O perfil do grupo de indecisos que pode decidir a eleição.
+              </p>
+
+
+              <h5>Real Time Big Data</h5>
+              <p>
+                Cláudia Castro abre dez pontos de vantagem sobre Freixo.
+              </p>
+
+
+              <h5>São Paulo</h5>
+              <p>
+                Garcia encosta em Tarcisio;<br>
+                Haddad lidera corrida
+              </p>
+
             </figcaption>
           </figure>
         </div>
-        <div class="col order-5">
+      </div>
+      <div class="col">
+        <div class="Box-Caixa">
+          <h1>MUNDO</h1>
+
           <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2022/08/GettyImages-1242666903.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
+            <img
+              src="https://veja.abril.com.br/wp-content/uploads/2020/02/meghan-harry-2018-1.jpg?quality=70&strip=info&resize=850,567"
+              class="figure-img img-fluid rounded" alt="..." />
             <figcaption class="figure-caption">
-              Mundo
-MOSCOW, RUSSIA - AUGUST 23: Russian sociologist and philosopher Aleksandr Dugin attends a funeral ceremony on August 23, 2022 in Moscow, Russia for his daughter Darya Dugina, who was killed in a car explosion on the outskirts of Moscow late Saturday. Dugina, 29, was the daughter of Russian sociologist and philosopher Aleksandr Dugin, who heads the International Eurasian Movement, a political movement which opposes American values like liberalism and capitalism. (Photo by Evgenii Bugubaev/Anadolu Agency via Getty Images)
-Dugin, o guru de Putin, acumula seguidores no Brasil e já esteve no país
+
+              <h4>
+                Meghan Markle: Minha ambição foi vista como ‘terrível’ ao namorar Harry
+              </h4>
+              <p>
+              Duquesa De Sussex fala das críticas que enfrentou ao iniciar relacionamento com o príncipe Harry.
+              </p>
+
+              <h5>Finlândia</h5>
+              <p>
+                Primeira-ministra se desculpa por toplesss na sede do governo
+              </p>
+
+
+              <h5>Ucrânia</h5>
+              <p>
+                Temendo ataques, EUA pedem que americanos deixem Kiev
+              </p>
+
+
+              <h5>Vaticano</h5>
+              <p>
+                Papa reforça controles e contralização das finanças
+              </p>
+
             </figcaption>
           </figure>
         </div>
-        <div class="col order-1">
+      </div>
+
+      <div class="col">
+        <div class="Box-Caixa">
+          <h1>CULTURA</h1>
+
           <figure class="figure">
-            <img src="https://veja.abril.com.br/wp-content/uploads/2022/07/000_8TL2GE.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
+            <img
+              src="https://veja.abril.com.br/wp-content/uploads/2022/08/ABRE-A-CASA-DO-DRAGA%CC%83O.jpg.jpg?quality=70&strip=info&resize=850,567"
+              class="figure-img img-fluid rounded" alt="..." />
             <figcaption class="figure-caption">
-              Estados Unidos
-US President Donald Trump dances at the end of a Make America Great Again rally as he campaigns in Gastonia, North Carolina, October 21, 2020. (Photo by SAUL LOEB / AFP)
-A tentativa de Trump de impedir a investigação do FBI contra ele
+
+              <h4>
+                O embate de audiência entre ‘A Casa do Dragão’ e ‘Game of Thrones’
+              </h4>
+              <p>
+              Série que reforça o universo creado por George R.R Martin bateu recorde em sua estreia na HBO
+              </p>
+              
+              <h5>Veja Gente</h5>
+              <p>
+                A reviravilta da Globo que desesperou empresários
+              </p>
+
+              <h5>Spotify</h5>
+              <p>
+                O alvo de Meghan Markle em novo podcast feminista
+              </p>
+              <h5>Veja Gente</h5>
+              <p>
+                A explicação de Bonner para o "Vácuo" em Ivete Sangalo
+              </p>
+
             </figcaption>
           </figure>
-          
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="img">
-      <img src="https://tpc.googlesyndication.com/simgad/13547858705668422821" alt="">
-    </div>
+</body>
 
-
-    <div class="container">
-      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-        <div class="col">
-          <div class="p-3 border bg-light">
-            <H1>BRASIL</H1><br>
-            <figure class="figure">
-              <img src="https://veja.abril.com.br/wp-content/uploads/2021/08/WhatsApp-Image-2021-08-20-at-20.50.30.jpeg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-              <figcaption class="figure-caption">
-               
-                <h4> 
-                  Sem Crivella, Romário pula na frente em disputa pelo Senado 
-                </h4> 
-                Nova pesquisa do Real Time Big Data, a primeira sem o ex-prefeito do Rio, coloca Molon em segundo e Daciolo em terceiro.
-                <br>
-                <br>
-                <h5>Pesquisa</h5>
-                <p>
-                  O perfil do grupo de indecisos que pode decidir a eleição.
-                </p>
-                <br>
-                <br>
-                <h5>Real Time Big Data</h5>
-                <p>
-                  Cláudia Castro abre dez pontos de vantagem sobre Freixo.
-                </p>
-                <br>
-                <br>
-                <h5>São Paulo</h5>
-                <p>
-                  Garcia encosta em Tarcisio;<br>
-                  Haddad lidera corrida
-                </p>
-
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            <H1>ECONOMIA</H1><br>
-            <figure class="figure">
-              <img src="https://veja.abril.com.br/wp-content/uploads/2022/06/BOMBA-DE-GASOLINA-POSTOS-10.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-              <figcaption class="figure-caption">
-               
-                <h4> 
-                  Petrobras enfrenta nova guerra, agora com o STF 
-                </h4> 
-                Nova pesquisa do Real Time Big Data, a primeira sem o ex-prefeito do Rio, coloca Molon em segundo e Daciolo em terceiro.
-                <br>
-                <br>
-                <h5>Pesquisa</h5>
-                <p>
-                  O perfil do grupo de indecisos que pode decidir a eleição.
-                </p>
-                <br>
-                <br>
-                <h5>Real Time Big Data</h5>
-                <p>
-                  Cláudia Castro abre dez pontos de vantagem sobre Freixo.
-                </p>
-                <br>
-                <br>
-                <h5>São Paulo</h5>
-                <p>
-                  Garcia encosta em Tarcisio;<br>
-                  Haddad lidera corrida
-                </p>
-
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            <h1>MUNDO</h1><br>
-
-            <figure class="figure">
-              <img src="https://veja.abril.com.br/wp-content/uploads/2020/02/meghan-harry-2018-1.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-              <figcaption class="figure-caption">
-               
-                <h4> 
-                  Meghan Markle: Minha ambição foi vista como ‘terrível’ ao namorar Harry 
-                  </h4>
-                  Duquesa De Sussex fala das críticas que enfrentou ao iniciar relacionamento com o príncipe Harry.
-                <br>
-                <br>
-                <h5>Finlândia</h5>
-                <p>
-                  Primeira-ministra se desculpa por toplesss na sede do governo
-                </p>
-                <br>
-                <br>
-                <h5>Ucrânia</h5>
-                <p>
-                Temendo ataques, EUA pedem que americanos deixem Kiev  
-                </p>
-                <br>
-                <br>
-                <h5>Vaticano</h5>
-                <p>
-                  Papa reforça controles e contralização das finanças  
-                </p>
-
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      
-        <div class="col">
-          <div class="p-3 border bg-light">
-            <h1>CULTURA</h1> <br>
-
-            <figure class="figure">
-              <img src="https://veja.abril.com.br/wp-content/uploads/2022/08/ABRE-A-CASA-DO-DRAGA%CC%83O.jpg.jpg?quality=70&strip=info&resize=850,567" class="figure-img img-fluid rounded" alt="..." />
-              <figcaption class="figure-caption">
-               
-                <h4> 
-                  O embate de audiência entre ‘A Casa do Dragão’ e ‘Game of Thrones’ 
-                </h4>
-                Série que reforça o universo creado por George R.R Martin bateu recorde em sua estreia na HBO
-                <br>
-                <br>
-                <h5>Veja Gente</h5>
-                <p>
-                  A reviravilta da Globo que desesperou empresários
-                </p>
-                <br>
-                <br>
-                <h5>Spotify</h5>
-                <p>
-                  O alvo de Meghan Markle em novo podcast feminista
-                </p>
-                <br>
-                <br>
-                <h5>Veja Gente</h5>
-                <p>
-                  A explicação de Bonner para o "Vácuo" em Ivete Sangalo
-                </p>
-
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </body>
 </html>
