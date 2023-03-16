@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Box-cima {
+  display: flex;
+  background-color: aqua;
+}
+
+.Card-box {
+  flex-direction: space-between;
+  margin: 20px;
+  width: 50px;
+}
+
+.Conteinerr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 15px 10px 50px 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .Conteinerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 10px 50px 10px;
+  }
+}
+
+/* .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+} */
